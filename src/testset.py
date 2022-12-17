@@ -9,7 +9,7 @@ from beartype import beartype
 from pandas.io.json._json import JsonReader
 from tqdm.auto import tqdm
 
-from src.labels import ground_truth
+from labels import ground_truth
 
 
 class setEncoder(json.JSONEncoder):
