@@ -2,7 +2,7 @@ from beartype import beartype
 
 
 @beartype
-def ground_truth(events: list[dict]):
+def ground_truth(events):
     prev_labels = {"clicks": None, "carts": set(), "orders": set()}
 
     for event in reversed(events):
